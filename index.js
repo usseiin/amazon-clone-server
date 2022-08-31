@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const DB =
-  "mongodb+srv://usseiin:<password>@cluster0.yh34xgs.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://usseiin:qwerty12@cluster0.yh34xgs.mongodb.net/?retryWrites=true&w=majority";
 
 //Import from other files
 const authRouter = require("./route/auth");
@@ -28,7 +28,7 @@ app.use(authRouter);
 app.use(adminRouter);
 app.use(productRouter);
 app.use(searchRouter);
-app.use(userRouter)
+app.use(userRouter);
 
 //connect to database (mongodb)
 mongoose
