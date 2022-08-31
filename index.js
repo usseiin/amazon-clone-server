@@ -16,7 +16,7 @@ const userRouter = require('./route/user');
 //creating a API
 //get put post delete update => crud
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 //init
 const app = express();
@@ -41,6 +41,6 @@ mongoose
   });
 
 //listen to the localhost port
-app.listen(PORT,() => {
+app.listen(() => {
   console.log(`connected at port ${PORT}`);
 });
